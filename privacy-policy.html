@@ -24,68 +24,56 @@
 
         .container {
             max-width: 800px;
-            margin: 0 auto;
+            margin: 40px auto;
             padding: 40px 20px;
             background-color: var(--panel);
             border-radius: 10px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-            margin-top: 50px;
             border: 1px solid rgba(255,255,255,0.05);
         }
 
-        h1 {
-            color: var(--accent);
-            font-size: 2rem;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        h2 {
-            color: var(--text);
-            font-size: 1.4rem;
-            margin-top: 25px;
-            margin-bottom: 10px;
-        }
-
-        p, ul {
-            color: var(--muted);
-            font-size: 1rem;
-            margin-bottom: 15px;
-        }
-
-        ul {
-            list-style-type: disc;
-            margin-left: 20px;
-        }
-
-        a {
-            color: var(--accent);
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
+        h1 { color: var(--accent); font-size: 2rem; text-align: center; margin-bottom: 30px; }
+        h2 { color: var(--text); font-size: 1.4rem; margin-top: 25px; border-bottom: 1px solid var(--accent); padding-bottom: 5px; }
+        p, ul { color: var(--muted); font-size: 1rem; margin-bottom: 15px; }
+        ul { list-style-type: disc; margin-left: 20px; }
+        strong { color: var(--text); }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .date { text-align: center; font-size: 0.8rem; color: var(--muted); margin-bottom: 20px; }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Politique de Confidentialité de ReptiBreed</h1>
+        <h1>Politique de Confidentialité - ReptiBreed</h1>
+        <p class="date">Dernière mise à jour : 6 avril 2026</p>
 
-        <h2>1. Collecte des données</h2>
-        <p>L'application ReptiBreed utilise l'appareil photo de votre appareil uniquement pour vous permettre de prendre des photos de vos animaux afin de les ajouter à leur fiche profil. Ces photos sont stockées localement sur votre appareil.</p>
+        <p>ReptiBreed est une application de gestion d'élevage de reptiles. Nous accordons une importance primordiale à la protection de votre vie privée.</p>
 
-        <h2>2. Utilisation des données</h2>
-        <p>Aucune image ou donnée personnelle n'est collectée ou transmise à des serveurs tiers par nous, sauf si vous activez volontairement la sauvegarde Google Cloud. Dans ce cas, vos données sont envoyées directement et uniquement sur votre propre compte Google Drive personnel. Nous n'y avons pas accès.</p>
+        <h2>1. Collecte des données personnelles</h2>
+        <p>ReptiBreed utilise les services de <strong>Google Sign-In</strong> pour authentifier les utilisateurs. Lors de la connexion, nous accédons uniquement à votre adresse e-mail et à votre identifiant Google de base. Ces données ne sont utilisées que pour identifier votre session et sécuriser vos sauvegardes.</p>
 
-        <h2>3. Permissions</h2>
+        <h2>2. Utilisation de Google Drive (Données sensibles)</h2>
+        <p>ReptiBreed demande l'accès à votre espace <strong>Google Drive</strong> (via le scope <code>drive.appdata</code>) pour les finalités suivantes :</p>
         <ul>
-            <li><strong>Caméra :</strong> Nécessaire pour prendre les photos des animaux.</li>
-            <li><strong>Stockage :</strong> Nécessaire pour sauvegarder les photos et les données de l'application.</li>
+            <li>Créer et mettre à jour vos fichiers de sauvegarde (extension .repti).</li>
+            <li>Restaurer vos données sur un nouvel appareil.</li>
         </ul>
+        <p><strong>Important :</strong> L'application accède uniquement aux fichiers qu'elle a elle-même créés. Nous n'avons aucun accès à vos documents personnels, photos ou autres fichiers présents sur votre Drive.</p>
 
-        <h2>4. Contact</h2>
-        <p>Pour toute question : <a href="mailto:crazygutt62@gmail.com">crazygutt62@gmail.com</a></p>
+        <h2>3. Stockage des photos et Médias</h2>
+        <p>L'application demande l'accès à votre <strong>appareil photo</strong> et à votre <strong>galerie</strong> uniquement pour illustrer les fiches de vos reptiles. Ces photos sont stockées localement sur votre téléphone ou sur votre espace Drive personnel si la sauvegarde est activée.</p>
+
+        <h2>4. Partage des données</h2>
+        <p><strong>Aucune donnée personnelle n'est vendue, louée ou transmise à des tiers.</strong> Vos données d'élevage vous appartiennent. Elles transitent uniquement entre l'application et votre compte personnel Google via des protocoles sécurisés (HTTPS).</p>
+
+        <h2>5. Sécurité des données</h2>
+        <p>Toutes les communications entre ReptiBreed et les services Google sont chiffrées en transit. Vos données sont protégées par les standards de sécurité de l'infrastructure Google Cloud.</p>
+
+        <h2>6. Vos droits</h2>
+        <p>Vous pouvez à tout moment cesser d'utiliser l'application et supprimer vos sauvegardes directement depuis votre interface Google Drive ou en déconnectant ReptiBreed de vos applications autorisées dans les paramètres de votre compte Google.</p>
+
+        <h2>7. Contact</h2>
+        <p>Pour toute question concernant vos données : <a href="mailto:crazygutt62@gmail.com">crazygutt62@gmail.com</a></p>
     </div>
 </body>
 </html>
